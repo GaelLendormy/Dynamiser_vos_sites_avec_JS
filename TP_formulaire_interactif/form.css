@@ -1,0 +1,31 @@
+#formInteractiv{
+	margin-top: 40px;
+}
+
+.formElement {
+display: inline-block;
+width: 40%;
+text-align: right;
+height: 25px;
+}
+
+.tooltip{
+	display: inline
+	border: 1px black solid;
+	border-radius: 5px;
+	background-color: silver;
+	padding: 2px 4px;
+	margin-left: 5px;	  
+}
+
+button{
+	border-radius: 5px;
+}
+
+.inputTrue{
+	border-color: green;
+}
+
+.inputWrong{
+	border-color: red;
+}

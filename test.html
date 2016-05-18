@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Test cours dynamiser vos sites avec JS</title>
+<body>
+    <div>
+        <p id="myP">Un peu de texte <a>et un lien</a></p>
+    </div>
+
+    <script>
+ var link = document.querySelector('a');
+
+link.parentNode.removeChild(link);
+    </script>
+</body>

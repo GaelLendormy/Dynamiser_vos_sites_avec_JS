@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Formulaire interactif</title>
+	<link rel="stylesheet" type="text/css" href="form.css">
+</head>
+<body>
+	<form id="formInteractiv">
+
+		<div class="formElement" id="sex">Sexe : 
+			<input id="male" type="radio" name="gender" class="gender">Homme
+			<input id="female" type="radio"  name="gender" class="gender">Femme
+		</div>
+		<span class="tooltip sex">Vous devez selectionner votre sexe</span>
+		<br /><br />
+
+
+		<div class="formElement">
+			<label for="lastName">Nom :  </label><input id="lastName" type="text">
+		</div>
+		<span class="tooltip lastName">Veuillez saisir un nom de plus de 2 caractères</span>
+		<br /><br />
+
+		<div class="formElement">
+			<label for="firstName">Prenom : </label><input id="firstName" type="text">
+		</div>
+		<span class="tooltip firstName">Veuillez saisir un prénom de plus de 2 caractères</span>
+		<br /><br />
+			
+		<div class="formElement">
+			<label for="age">Age : </label><input id="age" type="text">
+		</div>
+		<span class="tooltip age">Veuillez saisir un age compris entre 5 et 140 ans</span>
+		<br /><br />
+
+		<div class="formElement">
+			<label  for="login">Pseudo : </label><input id="login" type="text">
+		</div>
+		<span class="tooltip login">Veuillez saisir un pseudo de plus de 4 caractères</span>
+		<br /><br />
+
+		<div class="formElement">
+			<label for="password">Mot de passe : </label><input id="password" type="password">
+		</div >
+		<span class="tooltip password">Votre mot de passe doit contenir plus de 6 caractères</span>
+		<br /><br />
+
+		<div class="formElement">
+			<label for="password2">Veuillez confirmer votre Mot de passe : </label><input id="password2" type="password">
+		</div>
+		<span class="tooltip password2">Le mot de passe de confirmation doit etre identique à celui d'origine</span>
+		<br /><br />
+
+		<div class="formElement">Pays : 
+			<select id="country" > 
+				<option value="select" selected="">Veuillez selectionner votre pays de résidence</option>
+				<option value="france">France</option>
+				<option value="england">Angleterre</option>
+				<option value="belgium">Belgique</option>
+				<option value="usa">Etats-Unis</option>
+			</select>
+		</div>
+		<span class="tooltip country">Vous devez selectionner votre pays de résidence</span>
+		<br /><br />
+
+		<div class="formElement">
+			<label for="newsletter">Je souhaite recevoir la newsletter chaque mois </label><input id="newsletter" type="checkbox">
+		</div>
+		<br /><br />
+
+		<div class="formElement" id="button">
+			<button type="submit" value="submit" id="submit">M'inscrire</button>
+			<button type="reset" value="reset" id="reset">Réinitialiser le formulaire</button>
+		</div>
+
+	</form>
+
+	<script type="text/javascript" src="form.js"></script>
+</body>
+</html>
